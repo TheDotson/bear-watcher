@@ -1,1 +1,7 @@
-console.log('Is this thing on?')
+import bearForm from './components/bearForm.js';
+
+const init = () => {
+  bearForm.formSpawn();
+};
+
+init();

@@ -16,7 +16,7 @@ const formSpawn = () => {
   </form>
   `;
   utils.printToDom('#form', domString);
-  document.querySelector('#formSubmit').addEventListener('click', addBear)
+  // document.querySelector('#formSubmit').addEventListener('click', addBear)
 }
 
 export default { formSpawn };
