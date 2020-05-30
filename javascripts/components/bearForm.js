@@ -1,7 +1,7 @@
 import utils from '../helpers/utils.js';
 
 const formSpawn = () => {
-
+  $('body').on('click', '#formSubmit', addBearEvent);
   let domString = `
   <form>
     <div class="form-group">
@@ -16,7 +16,6 @@ const formSpawn = () => {
   </form>
   `;
   utils.printToDom('#form', domString);
-  // document.querySelector('#formSubmit').addEventListener('click', addBear)
 }
 
 export default { formSpawn };
