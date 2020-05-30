@@ -2,10 +2,14 @@ body {
   background-color: saddlebrown;
 }
 
-h1 {
+.title {
   text-align: center;
 }
 
 .container {
   background-color: seagreen;
+}
+
+.bearCard {
+  background-color: lightsalmon;
 }
