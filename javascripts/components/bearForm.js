@@ -1,7 +1,7 @@
 import utils from '../helpers/utils.js';
+import bearData from '../helpers/data/bearData.js';
 
-const formSpawn = () => {
-  $('body').on('click', '#formSubmit', addBearEvent);
+const createForm = () => {
   let domString = `
   <form>
     <div class="form-group">
@@ -16,6 +16,8 @@ const formSpawn = () => {
   </form>
   `;
   utils.printToDom('#form', domString);
+  $('#formSubmit').click(bearData.addBear)
+  $('#formData').val('');
 }
 
-export default { formSpawn };
+export default { createForm };
