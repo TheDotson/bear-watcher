@@ -6,7 +6,7 @@ const buildABear = (obj) => {
   let domString = '';
   for (let i = 0; i < obj.length; i++) {
     domString += `
-    <div class="card w-25 m-3">
+    <div class="card w-25 m-3 bearCard">
       <img src="${obj[i].image}" class="card-img-top " alt="${obj[i].name}">
       <div class="card-body">
         <h5 class="card-title">${obj[i].name}</h5>
