@@ -13,6 +13,12 @@ const buildABear = (obj) => {
         <p class="card-text">Fish Attempts: ${obj[i].fishAttempted}</p>
         <p class="card-text">Fish Caught: ${obj[i].fishCaught}</p>
       </div>
+      <div class="card-footer">
+            <div class="row mb-2">
+              <button type="button" class="m-auto btn btn-outline-primary caught-button"><i class="fas fa-fish"></i></button>
+              <button type="button" class="m-auto btn btn-outline-secondary attempt-button"><i class="fas fa-times-circle"></i></button>
+            </div>
+      </div>
     </div>`
   }
   utils.printToDom('#bearCards', domString);
